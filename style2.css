@@ -1,0 +1,218 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    height: 100vh;
+}
+ 
+.content{
+    position: relative;
+    width: 100%;
+    height:100%;
+    display: grid;
+    grid-template-areas: ". . . . un . . ."
+                         ". . deux . . . trois ."
+                         ". . . . . . . quatre "                    
+                         ". . . cinq . . . .  " 
+                         ". . . . six . sept ."
+                         "huit . . . . . . .";
+
+    grid-template-columns:repeat(8, 1fr); 
+    grid-template-rows: repeat(6, auto);  
+    padding: 10px;      
+}
+
+.un{
+     grid-area: un;
+     width: 100px;
+     height: 100px;
+    
+}
+
+.deux{
+   grid-area: deux; 
+  width: 100px;
+  height:100px;
+} 
+
+.trois{
+   grid-area: trois;
+    width: 100px;
+   height: 100px;
+}
+
+.quatre{
+   grid-area: quatre; 
+   width: 100px;
+   height: 100px;
+}
+
+.cinq{
+grid-area: cinq;
+width: 100px;
+height: 100px;
+}
+
+.six{
+   grid-area: six; 
+   width: 100px;
+   height: 100px;
+}
+
+.sept{
+grid-area: sept;
+width: 100px;
+height: 100px;
+}
+
+.huit{
+    grid-area: huit;
+     width: 100px;
+    height: 100px;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text{
+    width: 160px;
+    height: 55px;
+    overflow: hidden;
+    font-size: 3em;
+    text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-60%,-50%);
+    opacity: 0;
+   transition: .5s;
+   
+}
+
+.text p{
+    transform: translateY(100%);
+    transition: transform 1s;
+}
+
+.pic:hover .text p{
+    transform: translateY(0);
+}
+
+
+
+.un:hover .text{
+
+    opacity: 1;
+}
+
+.deux:hover .text{
+
+    opacity: 1;
+}
+.trois:hover .text{
+
+    opacity: 1;
+}
+
+.quatre:hover .text{
+
+    opacity: 1;
+}
+
+.cinq:hover .text{
+
+    opacity: 1;
+}
+
+.six:hover .text{
+
+    opacity: 1;
+}
+
+.sept:hover .text{
+
+    opacity: 1;
+}
+
+.huit:hover .text{
+
+    opacity: 1;
+}
+
+
+.prix{
+    width: 32px;
+   height:37px;
+   overflow: hidden;
+    white-space: pre;
+    font-style: italic;
+    font-size: 1em;
+    position: absolute;
+    top: 55%;
+    left: 78%;
+    transform: translate(-78%,-55%);
+    opacity: 0;
+    transition: .5s;
+}
+
+.prix p{
+    transform:translateY(100%);
+    transition: transform 1s;
+}
+
+
+.prix p{
+    transform: translateY(100%);
+    transition: transform 1s;
+}
+
+.pic:hover .prix p{
+    transform: translateY(0);
+}
+
+
+
+.un:hover .prix{
+
+    opacity: 1;
+}
+
+.deux:hover .prix{
+
+    opacity: 1;
+}
+.trois:hover .prix{
+
+    opacity: 1;
+}
+
+.quatre:hover .prix{
+
+    opacity: 1;
+}
+
+.cinq:hover .prix{
+
+    opacity: 1;
+}
+
+.six:hover .prix{
+
+    opacity: 1;
+}
+
+.sept:hover .prix{
+
+    opacity: 1;
+}
+
+.huit:hover .prix{
+
+    opacity: 1;
+}
